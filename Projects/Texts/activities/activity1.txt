@@ -1,0 +1,41 @@
+<div class="WEXtitle">Sports</div>
+
+<h1 class="highlighted-points">Sailing</h1>
+<div class="text-with-image">
+<div class="text-float-left">
+Since age 13, I've been race sailing with a partner, navigating and utilising the wind to go as quickly as possible. 
+
+Racing demands control and composure, especially with nearby sailors, which requires critical communication. 
+
+Sailing has been a fantastic way to socialize, stay fit, and strengthen my mental resilience. In the photo, I'm in the front boat, hanging out to control it.
+</div>
+<img src="/Projects/images/other/activities1/Sailing.png" class="ExperienceImageBigger">
+</div>
+
+<h1 class="highlighted-points">Rugby</h1>
+<div class="text-with-image">
+<div class="text-float-left">
+At school, I played as a winger on the Rugby team, requiring teamwork and determination. We won the national schools Rugby league, which involved weekly 90-minute practices.
+
+The first picture shows us after finishing second in a Year 7 tournament out of nine schools. 
+The second picture is from Year 10 after an undefeated season (I'm kneeling on the bottom right in both).
+</div>
+<img src="/Projects/images/other/activities1/Rugby.JPG" class="ExperienceImageBigger">
+</div>
+<div class="text-with-image">
+<div class="text-float-left">
+</div>
+<img src="/Projects/images/other/activities1/RugbyOlder.png" class="ExperienceImageBigger">
+</div>
+
+<h1 class="highlighted-points">Football</h1>
+<div class="text-with-image">
+<div class="text-float-left">
+From ages 6 to 13, I played for Chippenham Barca FC and Chippenham Milan FC. Football taught me the importance of teamwork in achieving goals. 
+
+This mentality has carried over to my academic success, thanks to collaboration with peers.
+
+I also played as a defender for school from Years 7 to 11, requiring hard work to prevent goals. This role helped me branch out socially, with weekly 90-minute practice sessions.
+</div>
+<img src="/Projects/images/other/activities1/Football.jpg" class="ExperienceImageBigger">
+</div>

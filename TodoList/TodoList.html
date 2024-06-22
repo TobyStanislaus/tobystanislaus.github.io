@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="todoList.css">
+    <script defer src="/intro.js"></script>
+    <script defer src="/title.js"></script>
+    <link rel="shortcut icon" type="image/png" href="to-do-list.png">
+  </head>
+
+  <body>
+
+    <div class="headLine-buttons">
+      <a href="\index.html">
+        <button class="titleText" >
+          Home
+        </button>
+      </a>
+  
+      <a href="\SailingML\SailingML.html" class="project-link">
+        <button class="project-button">
+          Sailing-ML Website
+        </button>
+      </a>
+      
+      <a href="\TodoList\TodoList.html" class="project-link">
+        <button class="project-button">
+          TodoList
+        </button>
+      </a>
+  
+      <a href="\RockPaperScissors\RockPaperScissors.html" class="project-link">
+        <button class="project-button">
+          Rock Paper Scissors
+        </button>
+      </a>
+  
+      <a href="/Calculator/Calculator.html" class="project-link">
+        <button class="project-button">
+          Calculator
+        </button>
+      </a>
+  
+      <a href="\Projects\Projects.html" class="project-link">
+        <button class="project-button">
+          Experience
+        </button>
+      </a>
+      
+    </div>
+  
+    <div class="authorText">
+      By Toby Stanislaus
+    </div>
+
+    <div class="title">Todo List</div>
+    <div class="todo-input-grid">
+      
+      <input placeholder="Todo name" class="input-js name-input" onkeydown="checkKey(event.key);">
+      <input type="date" class="js-date due-date-input">
+      <button onclick="
+      addTodo();
+      " class="add-todo-button">Add</button>
+    </div>
+    <p class="enterRequiredFields-js error"></p>
+    <div class="js-todo-list todo-grid"></div>
+    <script src="todoList.js"></script>
+  </body>
+</html>

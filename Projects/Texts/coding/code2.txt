@@ -1,0 +1,30 @@
+<div class="WEXtitle">JavaScript</div>
+
+<h1 class="highlighted-points">The Website</h1>
+This website is powered by extensive JavaScript, ensuring smooth button functionality and interactions. JavaScript was a new language for me, but having learned Python, I found it easier to grasp. Furthermore, I was able to explore my ability to create an effective and stylistic UI, to complement my previous back-end skills. 
+
+<div class="text-with-image">
+<div class="text-float-left">
+<h1 class="highlighted-points">Learning</h1>
+Learning JavaScript opened up a new coding avenue, especially given its prevalence in web development. 
+
+
+I integrated HTML, JavaScript, and CSS to create user-friendly, functional apps.
+
+This website required:
+
+- Advanced functions
+- Local storage
+- Dynamic HTML manipulation
+- Element addition and removal
+- CSS manipulation within JavaScript
+- Transitions and transformations
+</div>
+</div>
+
+<h1 class="highlighted-points">Explore my website and test my JavaScript skills yourself!</h1>
+
+
+
+
+

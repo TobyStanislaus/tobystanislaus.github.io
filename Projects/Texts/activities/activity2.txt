@@ -1,0 +1,23 @@
+<div class="WEXtitle">Parkrun</div>
+
+<h1 class="highlighted-points">Running</h1>
+<div class="text-with-image">
+<div class="text-float-left">
+From ages 9 to 14, I participated in Parkrun, a weekly 5k run on Saturdays (or 2k for kids on Sundays). It was a great way to meet fellow runners and enjoy friendly competition.
+
+When I started, my goal was to run a sub-25 minute 5k, improving from my initial 30-minute time. By attending Parkrun weekly, I eventually brought my time down to 21 minutes, surpassing my target.
+</div>
+<img src="/Projects/images/other/activities2/running.jpg" class="ExperienceImageBigger">
+</div>
+
+<h1 class="highlighted-points">Volunteering</h1>
+<div class="text-with-image">
+<div class="text-float-left">
+I volunteered at Parkrun for about three months, assisting with tasks such as timing runners, logging participants, and marshalling. 
+
+This enriching experience involved waking up at 7:30 on Saturdays, regardless of the weather, and interacting and assiting many runners.
+
+Learning to perform these tasks each week allowed me to give back to the organization that helped shape my running journey and mentality.
+</div>
+<img src="/Projects/images/other/activities2/volunteering.JPG" class="ExperienceImageBigger">
+</div>

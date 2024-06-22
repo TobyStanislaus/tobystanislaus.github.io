@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="\SailingML\favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href = "styles/WebsiteSearch.css">
+    <link rel="stylesheet" href = "styles/topbarbuttons.css">
+    
+    <script defer src="/title.js"></script>
+    <script defer src="scripts/WebsiteSearch.js"> </script>
+
+    <title>Website Search</title>
+</head>
+<body>
+    
+    <div class = "container">
+        <a href="\index.html">
+            <button>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span> Home
+            </button></a>
+
+        <a href="SailingML.html">
+            <button>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span> Intro
+            </button></a>
+        <a href="My Code Website.html">
+            <button>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span> My Code
+            </button></a>
+            
+        <a href="Website Search.html">
+            <button>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>  Search
+            </button></a>
+
+    </div>
+
+   
+        <div class="search-wrapper">
+            <label for="search"><h1>Search Boats</h1></label>
+            <input type="search" id="search" data-search placeholder="Search...">
+        </div>
+        <div class="user-cards" data-user-cards-container></div>
+    </section>
+    
+    <template data-user-template>
+        <div class="card1">
+            <div class="header" data-header><p></p></div>
+            <div class="body" data-body><p></p></div>
+        </div>
+    </template>
+    
+
+</body>
+</html>

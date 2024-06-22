@@ -1,0 +1,15 @@
+<div class='WEXtitle'>Academics</div>
+
+
+<div class='text-with-image'>
+<div class='grade-bunch'>Maths Challenge</div>
+
+In 2024, I advanced through the first round and excelled in the Pink Kangaroo round of the UKMT Maths Challenge, achieving the highest score in my school.
+
+
+</div>
+
+<div class='grade-bunch'>GCSE</div>
+<h1 class="grade">Further Maths - 9</h1>
+<h1 class="grade">Statistics - 8</h1>
+

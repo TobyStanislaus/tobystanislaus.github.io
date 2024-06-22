@@ -1,0 +1,45 @@
+<div class="WEXtitle">Python</div>
+
+<h1 class="highlighted-points">Starting Out</h1>
+My love for Python began in September 2022. Eager to create, I began to learn the language.
+
+<div class="text-with-image">
+<div class="text-float-left">
+<h1 class="highlighted-points">Tkinter and Projects</h1>
+My first project using Tkinter was a calculator. My learning goals included recreating the Monty Hall problem and developing a program for signing boats (see the Sailing-ML tab for more). 
+
+Understanding the Monty Hall problem:
+
+You choose one of three doors, behind which are two goats and one car. After your choice, the host reveals a goat behind one of the other doors. Should you switch your choice? (Hint: Yes, always switch.)
+
+Despite my initial code being a mess of over 500 lines, it worked and demonstrated the probability of winning by switching doors. I was proud of what I made, through my logic.
+</div>
+<img src="/Projects/images/other/code1/BadCoding.png" class="ExperienceImage">
+</div>
+
+<div class="text-with-image">
+<div class="text-float-left">
+<h1 class="highlighted-points">Coding Quest</h1>
+I participated in 'Coding Quest', a challenge for A-level students, involving array manipulation, simulating the snake game, index trees, and Dijkstra's algorithm. 
+
+Out of the entire school, only two students completed it: a Year 13 student and me, a Year 10 student. I finished second in my school and sixth form.
+</div>
+<img src="/Projects/images/other/code1/Graph.png" class="ExperienceImage">
+</div>
+
+<div class="text-with-image">
+<div class="text-float-left">
+<h1 class="highlighted-points">LeetCode</h1>
+To further my skills, I tackled more intermediate challenges on LeetCode. 
+You can see my stats as of Year 10 on the right.
+</div>
+<img src="/Projects/images/other/code1/leetcode.png" class="ExperienceImage">
+</div>
+
+<div class="text-with-image">
+
+<h1 class="highlighted-points">Other</h1>
+I look forward to participating in additional extracurricular coding challenges. 
+For more on my machine learning projects, see the top of the page.
+
+</div>

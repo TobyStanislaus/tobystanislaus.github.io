@@ -1,0 +1,17 @@
+<div class="WEXtitle">Siemens WEX</div>
+
+<h1 class="highlighted-points">Set-up</h1>
+Over a week, I participated in a collaborative project with a team of three, following Agile methodology. Our task was to create a working Raspberry Pi Pico traffic light system and present our work at the end of the week.
+
+<h1 class="highlighted-points">The Project</h1>
+We used Python to develop a real-world application, coupled with hardware experience with resistors, buttons, jumper cables, and LEDs to create functional traffic lights. The system simulated train operations, with button presses representing axles on tracks. These actions changed the lights to prevent train collisions by adapting to different types of trains with varying axles.
+
+Furthermore, we customized the project to allow the number of axles required to change the traffic light colors to be adjustable, enhancing both code efficiency and readability.
+
+<h1 class="highlighted-points">Experience</h1>
+Throughout the week, Siemens specialists gave us insightful talks on train engineering and physics. We also received an in-depth tour of the site, providing a comprehensive look into their work environment and values.
+
+
+
+
+

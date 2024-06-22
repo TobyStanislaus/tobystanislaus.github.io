@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="\SailingML\favicon.png">
+
+    <link rel="stylesheet" href = "styles/MyCode.css">
+    <link rel="stylesheet" href = "styles/topbarbuttons.css">
+
+    <title>My Code</title>
+    
+    <script defer src="/title.js"></script>
+    <script defer src="scripts/MyCode.js"> </script>
+    
+</head>
+<body>
+    <div class = "container">
+        <a href="\index.html">
+            <button>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span> Home
+            </button></a>
+        <a href="SailingML.html">
+            <button>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span> Intro
+            </button></a>
+        <a href="My Code Website.html">
+            <button>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span> My Code
+            </button></a>
+            
+        <a href="Website Search.html">
+            <button>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span> Search
+            </button></a>
+            <a href="Code Websites\Boat Or No Boat.html">
+                <button>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span> Raw Code
+                </button></a>
+    </div>
+    
+    
+
+    <section>
+        <h1 class = "title">Structure of Code</h1>
+    </section>
+    <section class="hidden">
+        <h2 class = "noSelect">To sign people on, you need their boat number, and their boat name, from there you can work out their name and sign them on completely.</h2>
+    </section>
+
+    <section class="hidden">
+        <h1>Boat Or No Boat?</h1>
+    </section>
+
+    <section class="hidden">
+        <h2 class = "noSelect">The code starts by determining whether there is a boat in the picture, using a multi-layered machine learning sigmoid model. This model is trained on about 1000 pieces of training images.
+            If there isn't, it will not waste its time trying to decipher boat numbers from water.
+        </h2>
+    </section>
+
+    
+    <div class = "textnimage">
+        <section class="hidden">
+            <section class="nextToImage">
+                <h1>Boat Outliner</h1>
+                <h2 class = "noSelect">Then, it will give me coordinates to an outline of the boat (to crop it from the rest of the image)
+                    using a linear regression model, with help from VGG16. This is to make it easier for the later models to make correct decisions.
+                    This model is trained on about a couple thousand training images. 
+                    This is done as illustrated here:
+                </h2>
+            </section>
+                <h1>Boat Recogniser</h1>
+                <h2 class = "noSelect">
+                    From that cropped image, another softmax model would work out the type of boat it is, which is one component to 
+                    signing people on. The current boat types identifiable by the model are: 29er, Laser, Solo, Aero, Tera and Feva. 
+                    In later versions, I would make more categories as there a alot more boats than that, but those are the popular boats.
+                </h2>
+            
+        </section>
+        <img src="images\MyCode\Boat Outline.png" class="image" draggable="false">
+    </div>
+    </section>
+    
+    <div class="textnimage">
+        <section class="hidden">
+            <h1>Boat Num Outliner Model</h1>  
+            <h2 class = "noSelect">Also from that cropped image, I would draw an outline, with another VGG16 model, onto the boat number on the sail, as shown in this picture. 
+                This would be again, cropped from the boat, and passed to the next model.
+            </h2>
+        </section>
+        <img src="images\MyCode\Boat Num Outline.png" class = "image" draggable="false">
+    </div>
+
+    
+    <div class="textnimage">
+        <section class="hidden">
+            <h1>Boat Num Divider</h1>
+            <h2 class = "noSelect">This will take the cropped boat number from the cropped boat, and will use opencv contours, rather than a ML model, to 
+                further split all numbers into individual numbers, as shown in the image to the right,
+                which could then passed to the next number reader model, which
+                actually reads each number into the system.
+            </h2>
+        </section>
+        <img src="images\MyCode\Boat Num Divided.png" draggable="false">
+    </div>
+
+    <div class="textnimage">
+
+        <section class="hidden">
+            <h1>Number Reader</h1>
+            <h2 class = "noSelect">This model would get all cropped numbers from the cropped boat number, and read each one. There is a category for "None" as it is possible for the 
+                contours to pick up random black lines from the cropped boat number, as shown by the furthest right image. 
+                Then, the number (869) is passed to the step in the process.
+            </h2>
+        </section>
+
+        <img src="images\MyCode\6.png" draggable="false">
+        <img src="images\MyCode\8.png" draggable="false">
+        <img src="images\MyCode\9.png" draggable="false">
+        <img src="images\MyCode\Bad image.png" 
+        class="image" draggable="false">
+    </div>
+
+    <section class="hidden">
+        <h1>Sign On to website</h1>
+    </section>
+
+    <section class="hidden">
+        <h2 class = "noSelect">Finally, the numbers are converted into a dictionary, meaning that they do not care for order (as it is impossible to have it in order),
+            and are compared to all numbers (also as dictionaries) in the online graphql database, which I accessed through the use of the requests python library.
+            There is a points system which I put in place to give rarer boats more chance to be signed on with numbers that are a bit off,
+            as there is less chance of signing the wrong person on. For example, the Laser, which is a common boat, would need a more harsh points
+            system as there are a lot of people with similar sail numbers, meaning I wouldn't want to sign someone who is 
+            not racing, but has similar sail numbers, on to the race. This is only needed as I need to give the models a chance to actually 
+            read any boats on to the website. The boat should hopefully be signed on from there.
+        </h2>
+    </section>
+
+    <section class="hidden">
+        <h1>Overview</h1>
+    </section>
+
+    <section class="hidden">
+        <h2 class = "noSelect">
+            First, a boat is decided to be in the picture, then it is outlined, then it's type is decided, 
+            and boat number outined, both from the cropped image. Next, the cropped boat number is then divided into its numbers,
+            and then those numbers are read. The full number is judged as to whether it is accurate enough to any boats(in the database),
+            and is then signed on.
+        </h2>
+    </section>
+
+    <section class="hidden">
+        <h1>Notes</h1>
+        <h2 class = "noSelect">
+            I hope to have tried my model on some real-life data by the end of march, and improve it
+            from there to actually be functional, but apart from that the project has been incredibly 
+            fun for me to work on, as it is something I love, Sailing, and learning about Machine Learning has
+            been fascinating!
+        </h2>
+    </section>
+
+    
+    
+</body>
+</html>

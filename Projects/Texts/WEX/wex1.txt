@@ -1,0 +1,46 @@
+<div class="WEXtitle">Renishaw WEX</div>
+
+<h1 class="highlighted-points">Set-up</h1>
+At the beginning of the week, I initially toured the site and saw the machines made there. I was then grouped with three other top-end coding enthusiasts to tackle an assigned project.
+
+<h1 class="highlighted-points">The Task</h1>
+- Develop a multi-device Morse code messaging system.
+- Utilize three computers: one for input, one as the server/decoder, and one for output.
+- Input via mouse: click for a dot, hold for a dash, and hold longer for a slash (to separate letters).
+
+<div class="text-with-image">
+<h1 class="highlighted-points">Our Project</h1>
+<div class="text-float-left">
+By the end of the week, we created a program that seamlessly relayed Morse messages between computers, meeting all requirements and more.
+
+We enhanced user experience with several features:
+
+- Displayed characters on the input screen as they were entered.
+
+- Enabled backspace to delete the last character and a six-dot command to clear the output screen.
+
+- Added a Morse code reference grid on the input screen for beginners.
+
+- Implemented a cyberpunk theme for an aesthetic and user-friendly interface, making it the best in function and design among all other projects.
+
+</div>
+<img src="/Projects/images/other/renishaw-image.jpg" class="ExperienceImage">
+</div>
+
+<h1 class="highlighted-points">Learning Points</h1>
+- I learned the importance of teamwork and the efficiency of using Git for version control (after many mistakes of deleting our work!).
+
+- We divided tasks based on strengths: one member per computer and one on UI.
+
+- My role was managing the input transmissions between computers, which was highly essential for the success of our group.
+
+The experience mimicked an Agile environment with daily stand-up meetings and a final presentation. This new structure helped me coordinate effectively, making valuable contributions to the team.
+
+<h1 class="highlighted-points">Resources Used</h1>
+The project was developed using Python:
+
+- Input code utilized Tkinter for the GUI and Python sockets for data transmission.
+- The server used SQLite for translations and sockets to relay messages.
+- The output computer received and displayed messages using Tkinter and sockets.
+
+Throughout the week, we prepared a polished PowerPoint presentation of our work, showcased against the other groups to a large audience at the end of the project.
