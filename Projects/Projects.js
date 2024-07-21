@@ -24,7 +24,7 @@ function setupChildClick(children,buttonName){
       resetChildButtonSize(buttonName);
       childButton.style.transform='scaleX(1.5) scaleY(1.5)';
       childButton.removeEventListener('mouseleave',buttonHoverOff);
-      readFile(`/Projects/Texts/${buttonName}/${childName}.txt`);
+      readFile(`Texts/${buttonName}/${childName}.txt`);
     };
     function buttonHoverOver(){
       hoverOverButton(childButton, 'white');

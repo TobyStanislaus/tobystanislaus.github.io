@@ -24,7 +24,7 @@ We enhanced user experience with several features:
 - Implemented a cyberpunk theme for an aesthetic and user-friendly interface, making it the best in function and design among all other projects.
 
 </div>
-<img src="/Projects/images/other/renishaw-image.jpg" class="ExperienceImage">
+<img src="images/other/renishaw-image.jpg" class="ExperienceImage">
 </div>
 
 <h1 class="highlighted-points">Learning Points</h1>

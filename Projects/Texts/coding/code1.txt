@@ -14,7 +14,7 @@ You choose one of three doors, behind which are two goats and one car. After you
 
 Despite my initial code being a mess of over 500 lines, it worked and demonstrated the probability of winning by switching doors. I was proud of what I made, through my logic.
 </div>
-<img src="/Projects/images/other/code1/BadCoding.png" class="ExperienceImage">
+<img src="images/other/code1/BadCoding.png" class="ExperienceImage">
 </div>
 
 <div class="text-with-image">
@@ -24,7 +24,7 @@ I participated in 'Coding Quest', a challenge for A-level students, involving ar
 
 Out of the entire school, only two students completed it: a Year 13 student and me, a Year 10 student. I finished second in my school and sixth form.
 </div>
-<img src="/Projects/images/other/code1/Graph.png" class="ExperienceImage">
+<img src="images/other/code1/Graph.png" class="ExperienceImage">
 </div>
 
 <div class="text-with-image">
@@ -33,7 +33,7 @@ Out of the entire school, only two students completed it: a Year 13 student and 
 To further my skills, I tackled more intermediate challenges on LeetCode. 
 You can see my stats as of Year 10 on the right.
 </div>
-<img src="/Projects/images/other/code1/leetcode.png" class="ExperienceImage">
+<img src="images/other/code1/leetcode.png" class="ExperienceImage">
 </div>
 
 <div class="text-with-image">
