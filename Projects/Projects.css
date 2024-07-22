@@ -106,9 +106,10 @@
 }
 
 
-
-
-
+.logo-image-unknown{
+  width:50px;
+  height:50px;
+}
 
 .logo-image-renishaw{
   width:110px;
@@ -116,13 +117,13 @@
 }
 
 .logo-image-siemens{
-  width:90px;
-  height:20px;
+  width:120px;
+  height:25px;
 }
 
 .logo-image-dense-air{
-  width:50px;
-  height:50px;
+  width:120px;
+  height:40px;
 }
 
 .logo-image-python{
@@ -148,4 +149,9 @@
   font-size:35px;
   color:rgb(241, 190, 131);
   margin:0px;
+}
+
+.link{
+  color:rgb(87, 87, 252);
+  text-decoration: none;
 }

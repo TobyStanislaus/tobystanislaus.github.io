@@ -1,2 +1,61 @@
-<div class=WEXtitle>Searching...</div>
-<h1 class="highlighted-points">Always excited to do more WEX!</h1>
+<div class="WEXtitle">Dense Air</div>
+<div class="text-with-image">
+  <h1 class="highlighted-points">Software Project</h1>
+  <div class="text-float-left">
+    <h2>The Task</h2>
+I was responsible for developing the integration between Netbox and the DenseWare website NMS. This involved building requests to the Netbox REST APIs using the Python Requests module.
+
+To ensure efficient data retrieval, I implemented functionality to filter the data fetched from the Netbox APIs, allowing queries by specific parameters such as manufacturers.
+
+Additionally, I created a user-friendly UI feature that enabled the passing of arguments during script execution for essential features like data filtering. This was accomplished using the Python library ArgParse.
+
+Throughout the project, I developed unit tests to ensure robust performance of my programs. I also maintained alignment with assigned tasks by regularly updating JIRA tickets.
+
+Emphasizing the importance of clean and readable code, I utilized the flake8 linter extension in Visual Studio Code, ensuring my code met professional standards.
+
+You can find the source code for this tool <a href="https://github.com/TobyStanislaus/DenseAir-Netbox" class="link">here</a>.
+  </div>
+  <img src="images/other/wex3/use.png" class="ExperienceImage" alt="Dense Air Software Project">
+
+</div>
+<div class="text-with-image">
+  <h1 class="highlighted-points">Data Science Project</h1>
+  <div class="text-float-left">
+    <h2>The Task</h2>
+I combined approximately 30 Excel data sheets containing tens of thousands of records of building estates. 
+
+The goal was to generate meaningful data that the sales team could use to more effectively market our product to potential customers in need.
+
+To efficiently complete this task, I utilized PowerQuery.
+  </div>
+  <img src="images/other/wex3/excel.png" class="ExperienceImage" alt="Data Science Project">
+</div>
+<h1 class="highlighted-points">Additional Highlights</h1>
+<ul>
+  <li>Had a valuable conversation with the CEO, James Estes, about startups.</li>
+  <li>Participated in multiple team meetings at Dense Air.</li>
+  <li>Attended the monthly 'All Hands' meeting, gaining insight into how leaders communicate company goals to employees.</li>
+  <li>Received one-on-one discussions on various areas of the software team at Dense Air.</li>
+</ul>
+<h1 class="highlighted-points">Learning Points</h1>
+<ul>
+  <li>Misunderstanding the problem (could have been avoided by paying closer attention to the JIRA tickets).</li>
+  <li>Messy code (eventually improved with the use of a linter).</li>
+  <li>Disorganized GitHub repository.</li>
+  <li>Inconsistent committing practices.</li>
+  <li>Using secrets within publicly available platforms (such as GitHub).</li>
+</ul>
+<h1 class="highlighted-points">Resources Used</h1>
+<ul>
+  <li>Python Requests for fetching data from APIs.</li>
+  <li>ArgParse for command line argument handling.</li>
+  <li>PowerQuery for data consolidation.</li>
+</ul>
+At the end of the week, I created a PowerPoint presentation that showcased my work for the sprint, which I presented to my supervisor via Teams.
+
+
+
+
+
+
+
