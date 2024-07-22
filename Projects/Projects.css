@@ -106,8 +106,6 @@
 }
 
 
-
-
 .logo-image-unknown{
   width:50px;
   height:50px;
@@ -120,7 +118,7 @@
 
 .logo-image-siemens{
   width:120px;
-  height:30px;
+  height:25px;
 }
 
 .logo-image-dense-air{
@@ -151,4 +149,9 @@
   font-size:35px;
   color:rgb(241, 190, 131);
   margin:0px;
+}
+
+.link{
+  color:rgb(87, 87, 252);
+  text-decoration: none;
 }
