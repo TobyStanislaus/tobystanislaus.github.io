@@ -15,7 +15,7 @@ Emphasizing the importance of clean and readable code, I utilized the flake8 lin
 
 You can find the source code for this tool <a href="https://github.com/TobyStanislaus/DenseAir-Netbox" class="link">here</a>.
   </div>
-  <img src="images/other/wex3/use.png" class="ExperienceImage" alt="Dense Air Software Project">
+  <img src="images/other/wex3/Use.png" class="ExperienceImage" alt="Dense Air Software Project">
 
 </div>
 <div class="text-with-image">
