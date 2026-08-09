@@ -9,7 +9,19 @@ In 2024, I advanced through the first round and excelled in the Pink Kangaroo ro
 
 </div>
 
-<div class='grade-bunch'>GCSE</div>
+<div class='grade-bunch'>GCSEs</div>
+<h1 class="grade">Maths - 9</h1>
 <h1 class="grade">Further Maths - 9</h1>
+<h1 class="grade">Computer Science - 9</h1>
+<h1 class="grade">Physics - 9</h1>
+<h1 class="grade">Chemistry - 9</h1>
+<h1 class="grade">Biology - 9</h1>
+<h1 class="grade">Business - 9</h1>
+<h1 class="grade">English Language - 9</h1>
+<h1 class="grade">English Literature - 9</h1>
+
 <h1 class="grade">Statistics - 8</h1>
+<h1 class="grade">Geography - 8</h1>
+<h1 class="grade">French - 8</h1>
+
 
