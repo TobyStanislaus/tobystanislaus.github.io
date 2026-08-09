@@ -76,6 +76,12 @@
 
 
 
+.otherImage {
+  float:right;
+  width:15%;
+  height: auto;
+}
+
 
 
 
@@ -101,14 +107,14 @@
 }
 
 .text-float-left {
-  width:40%;
+  width:67%;
   float:left;
 }
 
 
-.logo-image-unknown{
-  width:50px;
-  height:50px;
+.logo-image-cpp{
+  width:100px;
+  height:100px;
 }
 
 .logo-image-renishaw{
@@ -147,7 +153,7 @@
 
 .grade{
   font-size:35px;
-  color:rgb(241, 190, 131);
+  color:rgb(192, 171, 146);
   margin:0px;
 }
 

@@ -1,25 +1,122 @@
-<div class=WEXtitle></div>
-<h1 class="highlighted-points">
+<div class=WEXtitle>C++</div>
+<h1 class="highlighted-points">Starting out</h1>
+I started with watching the first 24 hours of <a href="https://www.youtube.com/watch?v=8jLOx1hD3_o&t=10098s" class = "link">this course</a>, where I learnt the basics:
+
+- Variables, data types, operators and expressions.
+- Functions, parameters, return values, overloading and scope.
+- Pointers, references, dynamic memory allocation and memory management.
+- Object orientated programming, such as classes, objects, constructors, destructors, inheritance and polymorphism.
+- Templates and generic programming.
+- Standard Template Library (STL), such as vectors, sets, iterators and algorithms.
 
 
+<div class="text-with-image">
+<div class="text-float-left">
+<h1 class="highlighted-points">First project - Conway's Game of life</h1>
+Conway's Game of Life – a simulation where cells on a grid live, die, or reproduce 
+based on simple neighbour-counting rules, creating complex emergent behaviour from simple logic.
 
+This was my first project within C++ (outside of tutorials). It was interesting due to the differences to Python, 
+such as having to initialise the types of all sorts of values - like the parameters of the functions, and variables. 
+This also required the manipulation of arrays within arrays, to represent the grid.
+I printed the grid out using the terminal, using std::cout, as demonstrated on the right.
 
+The code can be found <a href="https://github.com/TobyStanislaus/GameOfLifeC" class = "link">here</a>
+</div>
+<img src="images/other/code3/GOL2.png" class = "otherImage">
+</div>
 
+<div class="text-with-image">
+<div class="text-float-left">
+<h1 class="highlighted-points">Second project - Snake</h1>
+Snake – a classic arcade game where the player controls a growing snake, 
+navigating a grid-based environment while avoiding collisions and collecting food.
 
+This built quite well off of the game of life, as it required a grid.
+Initially, I used the terminal to display the grid, but I displayed it graphically, 
+using the package SFML. This added an extra challenge, as working out how to 
+compile with all of the required .dlls included was difficult.
 
+I also created a Snake class, which stored all of the data of the snake, such as how
+long it was, the x and y value of the head, and the direction it was going in.
+It also contained many functions to move the snake through the grid.
 
+The code can be found <a href="https://github.com/TobyStanislaus/Snake-Graphics" class = "link">here</a>
+</div>
+<img src="images/other/code3/SNA1.png" class = "otherImage">
+<img src="images/other/code3/SNA2.png" class = "otherImage">
+</div>
 
+<div class="text-with-image">
+    <div class="text-float-left">
+        <h1 class="highlighted-points">Third project - Asteroids</h1>
+Asteroids – a 2D arcade-style space shooter where the player controls a spaceship, 
+navigating through space, rotating, accelerating, and firing projectiles to destroy 
+moving asteroids using physics-based movement. 
 
+This was the first project where I used multiple files for different objects that I 
+such as Asteroid, Bullet and Player. It required implementing vector-based movement 
+with momentum and drag, so the ship would drift and rotate realistically rather than 
+snapping instantly to new directions. 
 
+Collision detection between bullets, asteroids, and the player was handled using 
+simple circle-based bounding checks, and asteroids would split into smaller fragments when 
+hit, before disappearing entirely once small enough. 
 
+Screen wraparound was also implemented, so objects leaving one edge of the 
+window would reappear on the opposite side, keeping the play area continuous. Splitting 
+the logic across separate classes made the codebase far easier to extend and debug 
+compared to my earlier single-file projects, and laid the groundwork for the more 
+structured, multi-file architecture I later used in the chess engine.
 
+The code can be found <a href="https://github.com/TobyStanislaus/Asteroids-Clone" class = "link">here</a>
+</div>
+    <img src="images/other/code3/AST1.png" class="otherImage">
+</div>
 
+<div class="text-with-image">
+<div class="text-float-left">
+<h1 class="highlighted-points">Fourth project - Chess</h1>
+Chess – a full-featured chess engine and desktop application combining a C++/SFML 
+graphical interface with a custom AlphaZero-style machine learning pipeline written 
+in Python. This is my most sophisticated project to date, spanning game logic, AI 
+search algorithms, neural network training, and packaged software distribution.
 
+The C++ side handles the game engine, GUI, and move search. It supports full legal 
+move generation and validation, check/checkmate detection, and a graphical board with 
+legal move highlighting, check indicators, and undo functionality. Players can compete 
+against several AI opponents of varying strength: a random-move bot, a Minimax bot with 
+alpha-beta pruning, and a Monte Carlo Tree Search (MCTS) bot guided by a neural network. 
+The MCTS implementation uses UCB1 for node selection and Dirichlet noise at the root to 
+encourage exploration during self-play, closely following the approach used in DeepMind's 
+AlphaZero.
 
+The machine learning pipeline, built in PyTorch, trains a residual convolutional neural 
+network (ChessNet) with separate policy and value heads to evaluate positions and suggest 
+moves. Training data is generated through self-play: the engine plays thousands of games 
+against itself using MCTS, recording board states, move probabilities, and outcomes as 
+training examples. A single overnight batch generated over 1,000 self-play games and 
+roughly 135,000 board positions, with multiprocessing tuned across 14 parallel workers to 
+maximise CPU utilisation during generation. Trained models are exported to ONNX format and 
+loaded directly into the C++ engine via ONNX Runtime, allowing the neural network to guide 
+move search in real time without any Python dependency at runtime.
 
+Bridging the two halves of the project required careful attention to encoding: board 
+positions are converted into a 17-plane tensor representation (piece positions, side to 
+move, castling rights, etc.), and move probabilities are decoded using the AlphaZero 8×8×73 
+policy scheme. Getting these encodings to agree exactly between the Python training code 
+and the C++ inference code was one of the more demanding parts of the project, since any 
+mismatch silently produces a network that "looks" like it's working but plays incoherently.
 
+On the engineering side, I migrated the entire build system from a MinGW-based toolchain to 
+a unified MSVC + vcpkg workflow using CMake presets, resolving a series of environment and 
+PATH conflicts along the way. The finished application is packaged as a standalone Windows 
+installer built with Inno Setup, with the MSVC runtime statically linked so end users don't 
+need to install any additional redistributables. Releases are distributed via GitHub Releases, 
+with an accompanying showcase page and release notes describing the different game modes and controls.
 
-
-
-
-</h1>
+The code can be found <a href="https://github.com/TobyStanislaus/Chess" class = "link">here</a>
+And you can install it for yourself on the <a href="https://github.com/TobyStanislaus/Chess/releases/tag/v1.1" class = "link">releases page</a>
+</div>
+<img src="images/other/code3/AST1.png" class="otherImage">
+</div>
